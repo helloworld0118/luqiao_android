@@ -1,0 +1,44 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorPrimary</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="colorPrimary">#2A93FD</item>
+        <item name="colorPrimaryDark">#2A93fD</item>
+        <item name="colorAccent">#2A93FD</item>
+        <item name="android:windowAnimationStyle">@style/Animation.Activity.Translucent.Style</item>
+
+    </style>
+    <style name="Animation.Activity.Translucent.Style" parent="@android:style/Animation.Translucent">
+        <!--<item name="android:windowEnterAnimation">@anim/open_enter</item>-->
+        <!--<item name="android:windowExitAnimation">@anim/open_exit</item>-->
+        <item name="android:activityOpenEnterAnimation">@anim/close_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/close_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/open_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/open_exit</item>
+    </style>
+    <style
+        name="selectorDialog"
+        parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <!--<item name="android:windowIsTranslucent">true</item>&lt;!&ndash;半透明&ndash;&gt;-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/selector_dialog_bg</item><!--背景透明-->
+        <item name="android:backgroundDimEnabled">false</item><!--模糊-->
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+    <style name="selectDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+</resources>

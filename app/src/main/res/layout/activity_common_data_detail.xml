@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <include layout="@layout/toolbar_center" />
+    <ListView
+        android:id="@+id/listView_data"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:divider="#e3e3e3"
+        android:dividerHeight="1px"
+        ></ListView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@mipmap/base_horization_line" />
+</LinearLayout>
